@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todos os inputs</title>
+
+    <style>
+        body {height: 1080;
+        width: 800px;}
+
+        .menu {
+            width: 220px;
+            margin: 2px 2px 2px 2px;
+            padding: 2px 2px 2px 2px;
+            background-color: gray;
+        }
+        .menu-inline {display: flex;}
+
+        .menu .menu-item {
+            white-space: nowrap;
+            white-space: 300px;
+            padding: 4px;
+        }
+        
+        li {list-style: none;}
+
+        label {font-size: 10px;}
+
+    </style>
 </head>
 <body>
+
+<div>
+
+    <form method="get">
+        Selecione seu estado:
+        <select id="estado" required> 
+            <option value='SP'>São Paulo</option>
+            <option value='MG'>Minas Gerais</option>
+            <option value='GO'>Goiás</option>
+            <option value='RN'>Rio Grande do Norte</option>
+            <option value='AM'>Amazonas</option>
+        </select>  <label for="Estado">Campo Obrigatório*</label>
+
+        <br><br>
+        Insira seu nome:
+        <input type="text" name="campoNome" value="" placeholder="Nome">
+        <br><br>
+
+        Digite seu telefone:
+        <input type="tel" name="campoPhone" value="" placeholder="(DDD) 0000-0000">
+        <br><br>
+
+        Insira o e-mail:
+        <input type="email" name="campoEmail" value="" placeholder="E-mail">
+        <br>
+        <br>
+
+        Assunto:
+        <br>
+        <input type="text" name="campoNome" value="" placeholder="Assunto">
+        <br><br>
+         
+        Mensagem:
+        <br>
+        <input type="text"  name="mensagem" value="" placeholder="Digite sua mensagem" style="width: 150px; height: 150px; text-align: center;">
+        <br>
+
+        <input type="button" value="Enviar" onclick="reload()">
+
+        </form>
+</div>
+
+
+<script>
+    function reload() {
+        window.alert("Dados enviados")
+        window.location.reload()
+
+    }
     
+</script>
+
+
 </body>
 </html>

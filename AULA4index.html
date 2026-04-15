@@ -3,59 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todos os inputs</title>
 
     <style>
         body {height: 1080;
         width: 800px;}
 
-        tr {
-            border: 2px solid;
-            padding: 2px;
-            background-color:cadetblue;
+        .menu {
+            width: 220px;
+            margin: 2px 2px 2px 2px;
+            padding: 2px 2px 2px 2px;
+            background-color: gray;
         }
+        .menu-inline {display: flex;}
 
-        th {
-            background-color: brown;
-            color: white;
-            border: 2px solid;
-            text-align: center;
+        .menu .menu-item {
+            white-space: nowrap;
+            white-space: 300px;
+            padding: 4px;
         }
+        
+        li {list-style: none;}
 
-        td { 
-            text-align: center; }
-
-        .estoque { background-color: green;}
-        .vazio { background-color: red;}
+        label {font-size: 10px;}
 
     </style>
 </head>
 <body>
 
-
-    <h1>TABELA CSS</h1>
 <div>
-<table>
-    <tr>
-        <th>PRODUTO</th>
-        <th> PREÇO</th>
-        <th>DISPONIBILIDADE</th>
-    </tr>
+  
+    <h1>IR PAGA A PAGINA CONTATO:</h1>
 
-    <tr>
-        <td>Monitor</td>
-        <td>R$ 3.000,00</td>
-        <td class='estoque'>Em estoque</td>
-    </tr>
+    <a href="contato.html"> CONTATOS</a>
+    <br><br><br>
 
-    <tr>
-        <td>Mouse</td>
-        <td>R$ 900,00</td>
-        <td class="vazio">Esgotado</td>
-    </tr>
-</table>
-    
+
+
+    <form method="get">
+        Selecione seu estado:
+        <select id="estado" required> 
+            <option value='SP'>São Paulo</option>
+            <option value='MG'>Minas Gerais</option>
+            <option value='GO'>Goiás</option>
+            <option value='RN'>Rio Grande do Norte</option>
+            <option value='AM'>Amazonas</option>
+        </select>  <label for="Estado">Campo Obrigatório*</label>
+
+        <br><br>
+        Insira seu nome:
+        <input type="text" name="campoNome" value="Apenas letras" placeholder="campoNome">
+        <br><br>
+
+        
+        Digite sua senha:
+        <input type="password" name="campoSenha" value="" placeholder="campoSenha">
+        <label for="Estado">Campo Obrigatório*</label>
+        <br><br>
+        
+        Digite seu telefone:
+        <input type="tel" name="campoPhone" value="" placeholder="(DDD) 0000-0000">
+        <br><br>
+
+        Checkbox:
+        SIM<input type="checkbox" name="campoCaixaSeleção" value="" checked>
+        NÃO<input type="checkbox" name="campoCaixaSeleção" value="" >
+        <br><br>
+        
+        Data de hoje:
+        <input type="date" name="campoData" value="" placeholder="campoData">
+        <br><br>
+
+        Paleta de cor:
+        <input type="color" name="campoCor" value="red" placeholder="campoCor">
+        <input type="color" name="campoCor" value="blue" placeholder="campoCor">
+        <br><br>
+
+        Data e hora:
+        <input type="datetime-local" name="campoDataHora" value="" placeholder="campoDataHora">
+        <br><br>
+
+        Input Escondido:
+        <input type="hidden" name="campoEscondido" value="" placeholder="campoEscondido">
+        <br><br>
+
+        Imagem:
+        <input style="height: 100px; width: 150px;" type="image" name="campoIMG" src="mapaDeserto.png" value="MinimapaInterior.png" placeholder="campoIMG">
+        <br><br>
+
+        Calendário mes e ano:
+        <input type="month" name="campoMesAno" value="" placeholder="campoMesAno">
+        <br><br>
+
+        CheckBox Radial:<br>
+        bolinha 1:
+        <input type="radio" name="campoCheckboxRadial" value=""  checked ="campoCheckboxRadial">
+        bolinha 2:
+        <input type="radio" name="campoCheckboxRadial" value=""  checked ="campoCheckboxRadial">
+        <br><br>
+
+        Reset:
+        <input type="reset" name="campoResetarFormulário" value="LIMPAR FORMULARIO" placeholder="campoResetarFormulário">
+        <br><br>
+
+        Campo Horas:
+        <input type="time" name="campoHoras" value="01:22" placeholder="campoHoras">
+        <br><br>
+
+        Insira o e-mail:
+        <input type="email" name="campoEmail" value="Insira seu e-mail" placeholder="campoEmail">
+        <br><br>
+
+        Adicione um link
+        <input type="url" name="campoURL" value="https://" placeholder="campoURL">
+        <label for="Estado">Campo Obrigatório*</label>
+        <br><br>
+
+        Campo semana:
+        <input type="week" name="campoSemana" value="" placeholder="campoSemana">
+        <br><br>
+
+        Ranged:
+        <input type="range" name="campoRanged" value="" placeholder="campoRanged">
+        <br><br>
+
+
+        Pesquisa:
+        <input type="search" name="campoPesquisa" value="" placeholder="campoPesquisa">
+        <br><br>
+
+        Botão enviar formulario:
+        <input type="button" name="campoEnviar" value="Enviar" placeholder="campoEnviar">
+        <br><br>
+
+        Botão File:
+        <input type="file" name="campoUpload" value="" placeholder="campoUpload">
+        <br><br>
+
+
+        </form>
 </div>
+
+
 
 
 
